@@ -2,20 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Custom Equal Shadow on All Sides */
+.custom-shadow {
+    box-shadow: 0 4px 8px rgba(169, 224, 236, 0.5),
+        0 -4px 8px rgba(169,
+            224,
+            236,
+            0.5),
+        -4px 0 8px rgba(169,
+            224,
+            236,
+            0.5),
+        4px 0 8px rgba(169,
+            224,
+            236,
+            0.5),
+        0 0 8px rgba(169,
+            224,
+            236,
+            0.5);
 }
