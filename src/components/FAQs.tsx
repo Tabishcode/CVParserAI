@@ -1,10 +1,11 @@
-'use client'
+'use client';
 import React, { useState } from "react";
 
-const FAQs = () => {
-    const [openFAQ, setOpenFAQ] = useState(null);
+const FAQs: React.FC = () => {
+    const [openFAQ, setOpenFAQ] = useState<number | null>(null);
 
-    const toggleFAQ = (index) => {
+    // Correct type for index: number
+    const toggleFAQ = (index: number) => {
         setOpenFAQ(openFAQ === index ? null : index);
     };
 
@@ -51,8 +52,7 @@ const FAQs = () => {
                     {faqItems.map((faq, index) => (
                         <div
                             key={index}
-                            className={`group ${openFAQ !== index ? "bg-[#f5f5f5]" : "bg-[#F6F4F9]"
-                                } rounded-xl`}
+                            className={`group ${openFAQ !== index ? "bg-[#f5f5f5]" : "bg-[#F6F4F9]"} rounded-xl`}
                         >
                             <h4
                                 onClick={() => toggleFAQ(index)}
