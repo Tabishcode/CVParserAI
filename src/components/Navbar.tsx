@@ -12,9 +12,11 @@ const Navbar = () => {
         </div>
         {/* right aligned  */}
         <div className='flex justify-center items-center space-x-6'>
-              <div className="underline-offset-6 underline cursor-pointer font-medium">Login</div>
-              <div className="inline-flex   bg-primary border-purple-500 hover:border-purple-700 border cursor-pointer transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring hover:bg-[#00CFCF]/90  text-white  space-x-2 rounded-full text-sm h-10 px-4 py-2 font-medium whitespace-nowrap  ">Buy Now</div>
+        <div className="btn  hover:text-white cursor-pointer font-medium">Login</div>
+        <div className="btn  inline-flex   bg-primary cursor-pointer  hover:bg-[#00CFCF]/90  text-white  space-x-2 rounded-full text-sm h-10 px-4 py-2 font-medium  ">Try Free Now</div>
+        
         </div>
+        
     </nav>
   )
 }
